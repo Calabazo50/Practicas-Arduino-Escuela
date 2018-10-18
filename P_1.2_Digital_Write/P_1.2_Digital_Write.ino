@@ -1,10 +1,10 @@
-void setup(){
-  pinMode(13,OUTPUT);
+// Luces nocturnas sin LDR
+void setup(){         //Inicialización del programa
+  pinMode(13,OUTPUT); //Pin 13 como salida
 }
-
-void loop(){
-  digitalWrite(13,LOW);
-  delay(43500000); //Con sol
-  digitalWrite(13,HIGH);
-  delay(42900000); //Sin sol
+void loop(){              //Programa que se repite
+  digitalWrite(13,LOW);   //Inicia la luz apagada
+  delay(43500000);        //Tiempo de sol
+  digitalWrite(13,HIGH);  //Enciende la luz
+  delay(42900000);        //Tiempo sin sol
 }
