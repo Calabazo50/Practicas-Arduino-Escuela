@@ -3,7 +3,7 @@ int val = 0;
 
 void setup(){
   pinMode(ledPin, OUTPUT);
-  Serial.begin(19200);
+  Serial.begin(9600);
   Serial.println("Conalep");
 }
 
